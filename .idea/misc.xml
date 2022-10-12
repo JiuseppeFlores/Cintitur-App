@@ -3,8 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Jiuseppe Flores/CintiturApp/app/src/main/res/drawable/boton_cintitur.xml" value="0.2125" />
+        <entry key="..\:/Jiuseppe Flores/CintiturApp/app/src/main/res/drawable/boton_menu.xml" value="0.2125" />
         <entry key="..\:/Jiuseppe Flores/CintiturApp/app/src/main/res/layout/activity_main.xml" value="0.17395833333333333" />
+        <entry key="..\:/Jiuseppe Flores/CintiturApp/app/src/main/res/layout/como_llegar.xml" value="0.33" />
+        <entry key="..\:/Jiuseppe Flores/CintiturApp/app/src/main/res/layout/donde_dormir.xml" value="0.1936725096194955" />
+        <entry key="..\:/Jiuseppe Flores/CintiturApp/app/src/main/res/layout/item_donde_dormir.xml" value="0.33" />
+        <entry key="..\:/Jiuseppe Flores/CintiturApp/app/src/main/res/layout/menu_principal.xml" value="0.30012825994014536" />
         <entry key="..\:/Jiuseppe Flores/CintiturApp/app/src/main/res/layout/splash_activity.xml" value="0.14709569577935647" />
+        <entry key="..\:/Jiuseppe Flores/CintiturApp/app/src/main/res/menu/top_app_bar.xml" value="0.3009833262077811" />
       </map>
     </option>
   </component>

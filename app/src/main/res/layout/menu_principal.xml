@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:menu="@menu/top_app_bar"
+        app:titleCentered="true"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        android:background="@drawable/vino_1"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CINTITUR"
+            android:textColor="@color/white"
+            android:fontFamily="@font/portico_diablo"
+            android:textSize="25dp"
+            android:layout_gravity="center_horizontal"
+            android:shadowColor="@color/black"
+            android:shadowRadius="10"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            />
+    </com.google.android.material.appbar.MaterialToolbar>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INICIO"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/portico_regular"
+        android:padding="10dp"
+        android:background="@color/secondary"
+        android:gravity="center_horizontal"
+        android:shadowColor="@color/black"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/bg_como_llegar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_menu_inicio"
+            android:scaleType="centerCrop"
+        />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lista_transporte"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/btn_como_llegar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/boton_menu"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="60dp"
+                        android:fontFamily="@font/portico_light"
+                        android:shadowColor="#7a000000"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:text="cómo llegar"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_como_llegar" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_donde_dormir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/boton_menu"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="55dp"
+                        android:fontFamily="@font/portico_light"
+                        android:shadowColor="#7a000000"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:text="dónde dormir"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_donde_dormir" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_donde_comer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/boton_menu"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="55dp"
+                        android:fontFamily="@font/portico_light"
+                        android:shadowColor="#7a000000"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:text="dónde comer"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_donde_comer" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_sabores_saberes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/boton_menu"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="65dp"
+                        android:fontFamily="@font/portico_light"
+                        android:shadowColor="#7a000000"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:text="sabores y saberes"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_sabores_saberes" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_bodegas_do"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/boton_menu"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="55dp"
+                        android:fontFamily="@font/portico_light"
+                        android:shadowColor="#7a000000"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:text="bodegas d.o."
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_bodega_do" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_que_visitar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/boton_menu"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="55dp"
+                        android:fontFamily="@font/portico_light"
+                        android:shadowColor="#7a000000"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:text="qué visitar"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_donde_dormir" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_paisaje_cultural"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="100dp"
+                    android:background="@drawable/boton_menu"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="55dp"
+                        android:fontFamily="@font/portico_light"
+                        android:shadowColor="#7a000000"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:text="paisaje cultural"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:padding="2dp"
+                        android:src="@drawable/ic_paisaje_cultural" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+</LinearLayout>
